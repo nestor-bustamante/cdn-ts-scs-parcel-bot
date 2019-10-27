@@ -1,0 +1,49 @@
+@keyframes buttonStart {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+    
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spanStart {
+  0% {
+    width: 0;
+    overflow: hidden;
+    padding: 12px 0;
+  }
+  100% {
+    width: 82px;
+    overflow: auto;
+    padding: 12px;
+  }
+}
+
+@keyframes spanHide {
+  0% {
+    width: 82px;
+    overflow: auto;
+    padding: 12px;
+  }
+  100% {
+    width: 0;
+    overflow: hidden;
+    padding: 12px 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeBubble {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

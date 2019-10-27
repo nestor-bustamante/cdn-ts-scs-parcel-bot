@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="BOT_03" transform="translate(-330.000000, -771.000000)" fill-rule="nonzero" stroke="#00A9E0">
+            <g id="TEXT-INPUT" transform="translate(36.000000, 756.000000)">
+                <path d="M310.95441,17.2215588 L308.539909,28.6082878 C308.35775,29.4119308 307.882708,29.6119486 307.207647,29.2333435 L303.528748,26.5223876 L301.75359,28.2296826 C301.557144,28.4261287 301.392844,28.590429 301.014238,28.590429 L301.278548,24.8436666 L308.097012,18.6824032 C308.393467,18.418094 308.032721,18.2716523 307.636257,18.5359616 L299.206935,23.8435775 L295.57804,22.707762 C294.788684,22.4613114 294.774397,21.9184059 295.74234,21.5398007 L309.936462,16.0714563 C310.593664,15.8250057 311.168715,16.2178979 310.95441,17.2215588 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
