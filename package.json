@@ -17,6 +17,6 @@
   "devDependencies": {
     "cssnano": "^4.1.10",
     "sass": "^1.23.1",
-    "typescript": "^3.6.4"
+    "typescript": "^3.7.2"
   }
 }
