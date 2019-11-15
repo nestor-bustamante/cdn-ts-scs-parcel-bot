@@ -1,9 +1,8 @@
 ((window: Window & typeof globalThis, document: Document) => {
   class CreateContainer {
     public src: any;
-     // path = hhtp://www.rutaabsoluta.cl/
     public path: String = 'http://127.0.0.1:5500/dist/';
-    public pathMsg: String = 'http://localhost:3000';
+    // public path: String = 'https://laura-cdn.azurewebsites.net/dist/';
     private arrMenu: Array<string> = [
       '¿Cómo conocer mi deuda con Movistar?',
       '¿Cuándo se reinicia mi plan?',
@@ -152,21 +151,23 @@
       const eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
       const eventer = window[eventMethod];
       const messageEvent = eventMethod === "attachEvent" ? "onmessage" : "message";
+
       eventer(messageEvent, function (e: any) {
-
         const getButtonHelp = document.querySelector('.widget-container_header_buttons button');
-
         if (e.data === "blockHelp" || e.message === "blockHelp") {
           getButtonHelp.setAttribute('disabled', 'disaled');
         }
         if (e.data === "enabledHelp" || e.message === "enabledHelp") {
           getButtonHelp.removeAttribute("disabled");
         }
+        if (e.data.action === "CLOSE_CHATBOT") {
+          window.LauraWidget.openWidget();
+        }
       });
     }
 
     private sendPostMessage(iframe: any, message: any) {
-      iframe.postMessage(message, this.pathMsg);
+      iframe.postMessage(message, "*");
       return false;
     }
 
@@ -225,8 +226,7 @@
     private setUp() {
       const getHead:any = document.head;
       const link = document.createElement("link");
-      // href = hhtp://www.rutaabsoluta.cl/
-      link.href = "../dist/assets/css/laura-widget-cdn-style.css";
+      link.href = `${this.path}assets/css/laura-widget-cdn-style.css`;
       link.type = "text/css";
       link.rel = "stylesheet";
       link.media = "screen, print";
@@ -238,7 +238,7 @@
 })(window, document);
 
 window.addEventListener('load', async () => {
-  await window.LauraWidget.init('http://localhost:3000/');
+  await window.LauraWidget.init('https://canales-dig-dev-widget.azurewebsites.net/');
 });
 
 
